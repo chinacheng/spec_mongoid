@@ -1,12 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.2'
-gem "mongoid"
-gem "bson_ext"
-
-# JavaScript runtime
-gem 'execjs'
-gem 'therubyracer'
+# gem "mongoid", "~> 2.4"
+# gem "bson_ext", "~> 1.5"
+gem 'bson_ext', '1.6.1'
+gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -18,7 +16,9 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
+  # JavaScript runtime
+  gem 'execjs'
+  gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
 end

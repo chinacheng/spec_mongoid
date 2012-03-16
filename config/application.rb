@@ -13,6 +13,8 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+Mongoid.load!("config/mongoid.yml")
+
 module SpecMongoid
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

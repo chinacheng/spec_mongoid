@@ -1,9 +1,11 @@
 development:
   host: localhost
+  port: 27017
   database: spec_mongoid_development
 
 test:
   host: localhost
+  port: 27017
   database: spec_mongoid_test
 
 # set these environment variables on your prod server
