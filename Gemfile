@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
-# gem "mongoid", "~> 2.4"
-# gem "bson_ext", "~> 1.5"
-gem 'bson_ext', '1.6.1'
-gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
+gem 'rails'
+
+gem 'bson_ext'
+gem 'mongoid'
 
 group :development,:test do
   gem 'factory_girl'
@@ -18,15 +17,15 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # JavaScript runtime
   gem 'execjs'
   gem 'therubyracer'
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
 end
 
 gem 'jquery-rails'
