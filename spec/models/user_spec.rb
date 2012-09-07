@@ -1,3 +1,3 @@
-require 'rspec_helper'
+require 'spec_helper'
 describe User do 
 end

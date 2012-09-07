@@ -6,6 +6,11 @@ gem 'rails', '3.2.2'
 gem 'bson_ext', '1.6.1'
 gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
 
+group :development,:test do
+  gem 'factory_girl'
+  gem 'rspec-rails'
+end
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
