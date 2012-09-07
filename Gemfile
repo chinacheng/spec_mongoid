@@ -9,6 +9,7 @@ gem 'mongoid', :git => 'git://github.com/mongoid/mongoid.git'
 group :development,:test do
   gem 'factory_girl'
   gem 'rspec-rails'
+  gem 'database_cleaner'
 end
 
 # Bundle edge Rails instead:
