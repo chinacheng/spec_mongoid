@@ -1,2 +1,1 @@
-
-sudo service mongodb start
+A test project for studying spec test and mongodb 
