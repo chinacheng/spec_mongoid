@@ -1,4 +1,5 @@
 require 'spec_helper'
+
 describe User do 
 
   before do
@@ -9,4 +10,5 @@ describe User do
     @user.name.should == "lucy"
     @user.age.should == 18
   end
+
 end
