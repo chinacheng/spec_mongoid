@@ -4,6 +4,7 @@ gem 'rails'
 
 gem 'bson_ext'
 gem 'mongoid'
+gem 'thin'
 
 group :development,:test do
   gem 'factory_girl'
@@ -22,9 +23,6 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # JavaScript runtime
-  gem 'execjs'
-  gem 'therubyracer'
-
   gem 'uglifier'
 end
 
