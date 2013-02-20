@@ -15,8 +15,7 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    if @user.valid?
-      @user.save
+    if @user.save
       return redirect_to :action => :index
     end
     render :action => :new
