@@ -12,19 +12,17 @@ describe User do
   end
 
   it 'save lucy failure' do
-    begin_count = User.count
-    @user.save
-    end_count = User.count
-    (end_count - begin_count).should be 0 
+    assert_no_difference('User.count') do
+      @user.save
+    end
   end
 
   it 'save lucy with the full attributes' do
     @user.email = 'lucy@tesst.com'
     @user.password = '123456'
-    begin_count = User.count
-    @user.save
-    end_count = User.count
-    (end_count - begin_count).should be 1 
+    assert_difference('User.count', 1) do
+      @user.save
+    end
   end
 
 end
