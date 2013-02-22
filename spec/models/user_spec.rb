@@ -25,4 +25,20 @@ describe User do
     end
   end
 
+  it 'create a user by factory girl' do
+    assert_no_difference('User.count') do 
+      FactoryGirl.build(:user)
+    end
+  
+    assert_difference('User.count', 1) do
+      FactoryGirl.create(:user)
+    end
+  end
+
+  it 'use factory girl to create many users' do
+    assert_difference('User.count', 10) do
+      10.times{|i| FactoryGirl.create(:user) }
+    end
+  end
+
 end
