@@ -2,8 +2,6 @@ require 'spec_helper'
 
 describe UsersController do
 
-  render_views 
-
   it 'create a user' do
     get :new 
     response.should render_template('new')
