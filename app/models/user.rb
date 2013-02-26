@@ -45,4 +45,6 @@ class User
   field :login, type: String
   field :age, type: Integer
 
+  # has many topics
+  has_many :topics
 end
