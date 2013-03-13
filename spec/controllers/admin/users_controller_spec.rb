@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe UsersController do
+describe Admin::UsersController do
 
   it 'create a user' do
     get :new 

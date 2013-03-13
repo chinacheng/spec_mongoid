@@ -51,7 +51,10 @@ SpecMongoid::Application.routes.draw do
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
   root :to => 'welcome#index'
-  resources :users
+
+  namespace :admin do
+    resources :users
+  end
 
   # See how all your routes lay out with "rake routes"
 
