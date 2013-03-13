@@ -1,8 +1,11 @@
 class Admin::UsersController < ApplicationController
 
+  # 验证用户是否登录
+  before_filter :authenticate_user! 
+
   before_filter :per_load
   def per_load
-    @user = User.find_by_id(params['id']) if params['id']
+    @user = User.find(params['id']) if params['id']
   end
 
   def index
