@@ -36,8 +36,8 @@ class Admin::UsersController < ApplicationController
   def show
   end
 
-  def delete
-    if @user.destory
+  def destroy
+    if @user.destroy
       redirect_to :action => :index
     end
   end
